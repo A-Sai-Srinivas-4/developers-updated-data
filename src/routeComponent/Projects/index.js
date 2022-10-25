@@ -1,0 +1,25 @@
+import Header from '../Header'
+import Footer from './../Footer'
+//import DeveloperData from './../DeveloperData'
+import ProjectData from './../ProjectData'
+//import ProjectDetails from '../ProjectDetails'
+import Sidebar from '../Sidebar/Sidebar'
+
+import './index.css'
+
+const Projects = () => (
+  <>
+  <div>
+
+    <h1 className="project-heading">Projects</h1>
+   
+    <ProjectData />
+    </div>
+
+    <Footer />
+    
+    
+  </>
+)
+
+export default Projects

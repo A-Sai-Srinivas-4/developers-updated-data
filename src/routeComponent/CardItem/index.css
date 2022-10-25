@@ -1,0 +1,32 @@
+.card-item{
+    padding:10px;
+}
+.profile-img{
+    height:100px;
+    width:100px;
+    border-radius: 100px;
+    display: flex;
+    align-self: center;
+}
+
+.nav-link {
+    font-family: 'Roboto';
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .project-card {
+    text-align: center;
+    height: 90px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 3px 0px;
+    width: 250px;
+    border-top: 5px solid;
+  }

@@ -1,0 +1,56 @@
+.project-details-card {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid green;
+   
+}
+
+.heading-text{
+    font-size: 30px;
+    color:skyblue;
+}
+
+.text{
+    font-size: 20px;
+    color:skyblue;
+}
+
+.text-color{
+    color: black;
+}
+.card {
+    padding: 0px;
+    margin: 20px;
+    box-shadow: 0px 2px 3px 2px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.emp-card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    list-style-type: none;
+    width: 20%;
+    border-radius: 8px;
+    border-top: 5px solid #44c4a1;
+    box-shadow: 0px 3px 2px 0px;
+}
+.emp-image{
+    width:100px;
+}
+.emp-name{
+    font-size: 22px;
+    color:green;
+}
+.emp-role{
+    font-size: 16px;
+    color:brown;
+}

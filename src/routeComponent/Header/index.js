@@ -1,0 +1,38 @@
+import {Link} from 'react-router-dom'
+import Sidebar from '../Sidebar/Sidebar'
+import './index.css'
+
+const Header = () => (
+  <nav className="nav_container">
+  <Sidebar/>
+    <div className="nav-content">
+      <img
+        className="website-logo"
+        src="https://secureservercdn.net/160.153.137.91/nhd.f13.myftpupload.com/wp-content/uploads/2022/06/logo-1-14.svg?time=1665549221"
+        alt="website logo"
+      />
+      <ul className="nav-menu">
+        <li>
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/Projects" className="nav-link">
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/Resources" className="nav-link">
+            Developers
+          </Link>
+        </li>
+      </ul>
+      <button type="button" className="logout-btn">
+        Sign-Out
+      </button>
+    </div>
+  </nav>
+)
+
+export default Header

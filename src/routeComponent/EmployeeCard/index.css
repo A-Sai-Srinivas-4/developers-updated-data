@@ -1,0 +1,53 @@
+.dev-card-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    list-style-type: none;
+    width: 100%;
+    border-radius: 10px;
+    border-top: 5px solid #44c4a1;
+    box-shadow: 0px 3px 2px 0px;
+ }
+ 
+ .nav-link {
+    font-family: 'Roboto';
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+
+ .cards {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .image {
+     width: 80px;
+     height: 80px;
+     border-radius: 120px;
+     margin-top: 20px;
+     border: 2px solid black; 
+ }
+ .heading {
+    font-size: 16px;
+
+ }
+
+ .discription {
+    font-size: 16px;
+ 
+ }
+ .project-name{
+   display: flex;
+ }
+ .pro_card {
+
+   display: flex;
+
+ }
+
+ 
