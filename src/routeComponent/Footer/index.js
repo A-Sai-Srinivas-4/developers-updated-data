@@ -7,7 +7,7 @@ import './index.css'
 const Footer = () => {
   
       return (
-        <div className="footer-container">
+        <div className="footer-container" >
           <div>
             <FaGoogle size={30} className="footer-icon" />
             <FaTwitter size={30} className="footer-icon" />

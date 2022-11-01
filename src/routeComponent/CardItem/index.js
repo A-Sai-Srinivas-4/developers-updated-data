@@ -39,7 +39,7 @@ const CardItem = ({details}) => {
     className="nav-link" >
     <div key={uuidv4()} className="project-card" >
     
-        <h3>{projectName}</h3>
+        <h3 className='heading-text'>{projectName}</h3>
      
     </div>
     </Link>

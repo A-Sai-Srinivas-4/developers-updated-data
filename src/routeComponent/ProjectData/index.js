@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import CardItem from './../CardItem'
+import { Link } from 'react-router-dom'
+import {MdOutlineArrowBackIosNew} from "react-icons/md"
 import OldJson from './../OldJson/jsonData.json'
 import Sidebar from "../Sidebar/Sidebar"
 import './index.css'
@@ -40,7 +42,9 @@ const uniq_project_names = [...new Set(newArray)];
     return(
 
         <>
-        
+        <div className='back-container'>
+    <Link to="/" className='back-option'><MdOutlineArrowBackIosNew size={25} /></Link>
+    </div>
 
         <div className="cards-lists">
 

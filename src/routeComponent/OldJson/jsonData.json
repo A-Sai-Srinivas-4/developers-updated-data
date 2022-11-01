@@ -3,7 +3,7 @@
     {
       "id" : 1,
       "Name": "Nikhil",
-      "Role": "Sr. Developer",
+      "Role": "Sr.Developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "4 Years",
       "TechStack": "React,Node & P9",
@@ -22,7 +22,7 @@
     {
       "id" : 2,
       "Name": "Raushan",
-      "Role": "Sr. Developer",
+      "Role": "Sr.Developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "4 Years",
       "TechStack": "React,Node & P9",
@@ -71,7 +71,7 @@
       "id" : 4,
       "Name": "Garima",
       "Role": "Scrum Master",
-      "image-url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
+      "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
       "Employment": "Full Time",
@@ -127,7 +127,7 @@
       "id" : 7,
       "Name": "shiva Jjyothi",
       "Role": "Technical Lead",
-      "image-url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
+      "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "3 Year",
       "TechStack": "",
       "Employment": "Full Time",
@@ -155,7 +155,7 @@
       "id" : 8,
       "Name": "Ramana",
       "Role": "Manager",
-      "image-url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
+      "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
       "Employment": "Full Time",
@@ -182,7 +182,7 @@
     {
       "id" : 9,
       "Name": "Karunakar",
-      "Role": "Acountant",
+      "Role": "Accountant",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -210,7 +210,7 @@
     {
       "id" : 10,
       "Name": "Vijay sai",
-      "Role": "Junior software developer",
+      "Role": "Testing",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -238,7 +238,7 @@
     {
       "id" : 11,
       "Name": "HarshaVardhan",
-      "Role": "junior software developer",
+      "Role": "Junior software developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -266,7 +266,7 @@
     {
       "id" : 12,
       "Name": "Lovaraju",
-      "Role": "junior software developer",
+      "Role": "Junior software developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -294,7 +294,7 @@
     {
       "id" : 13,
       "Name": "Sai Srinivas",
-      "Role": "junior software developer",
+      "Role": "Junior software developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -322,7 +322,7 @@
     {
       "id" : 14,
       "Name": "Shiva",
-      "Role": "Mechine Learning",
+      "Role": "Machine learning developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -350,7 +350,7 @@
     {
       "id" : 15,
       "Name": "Arman",
-      "Role": "juniour software developer",
+      "Role": "Junior software developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -378,7 +378,7 @@
     {
       "id" : 16,
       "Name": "junidh",
-      "Role": "mechine-Learning-Developer",
+      "Role": "Machine learning developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",
@@ -433,7 +433,7 @@
     },{
       "id" : 18,
       "Name": "Supriya",
-      "Role": "juniour software developer",
+      "Role": "Junior software developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",

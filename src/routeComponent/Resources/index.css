@@ -13,7 +13,6 @@
     border: 1px solid blue;
     height: 30px;
     width: 80px;
-
     color: aliceblue;
     padding: 4px;
   }
@@ -27,7 +26,24 @@
     font-weight: 500;
     color: black;
   }
-  .headingsss {
-    font-size: 22px;
+  .dev-details-heading {
+    font-size: 35px;
     text-align: center;
+    color: #fff;
   }
+  .back-container{
+    display: inline;
+    align-items: center;
+    
+  }
+  .back-option{
+    display: inline;
+    margin-left:50px;
+    color:#fff;
+    border: 2px solid;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+ 

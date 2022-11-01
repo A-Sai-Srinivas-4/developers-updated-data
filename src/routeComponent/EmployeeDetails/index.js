@@ -4,6 +4,7 @@ import OldJson from './../OldJson/jsonData.json'
 import DeveloperData from "../DeveloperData"
 import Footer from './../Footer'
 import { Link } from "react-router-dom"
+import {MdOutlineArrowBackIosNew} from "react-icons/md"
 
  import './index.css'
  
@@ -35,7 +36,9 @@ import { Link } from "react-router-dom"
     return(
         <>
         <div className="details_container">
-
+        <div className='back-container'>
+        <Link to="/resources" className='back-option'><MdOutlineArrowBackIosNew size={25} /></Link>
+        </div>
 
         <div className="top_details">
         <img src={data.image_url} alt="" className="images"/>
@@ -50,19 +53,18 @@ import { Link } from "react-router-dom"
             projectData.map(eachItems=>{
               return (
                 <div className="project_container">  
-                <h1 className="headings" >{`PROJECTS : ${eachItems.Name}`}</h1>
-                <h1 className="headings">{`Role : ${eachItems.Role}`}</h1>
-                <h1 className="headings">{`Tech_Stack : ${eachItems.Tech_Stack}`}</h1>
-                <h1 className="headings">{`Allocation : ${eachItems.Allocation}`}</h1>  
+                <h1 className="headings" >PROJECTS : <span className="spans">{`${eachItems.Name}`}</span></h1>
+                <h1 className="headings" >Role : <span className="spans">{`${eachItems.Role}`}</span></h1>
+                <h1 className="headings" >Tech_Stack : <span className="spans">{`${eachItems.Tech_Stack}`}</span></h1>
+                <h1 className="headings" >Allocation : <span className="spans">{`${eachItems.Allocation}`}</span></h1>
+                
                 <hr />   
                 </div>
 
               )
             })
           }
-          <Link to='/Resources' className="">
-                <button className='back_button'>Back</button>
-                </Link>
+          
 
         </div>
         

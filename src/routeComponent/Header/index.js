@@ -1,10 +1,9 @@
 import {Link} from 'react-router-dom'
-import Sidebar from '../Sidebar/Sidebar'
 import './index.css'
 
 const Header = () => (
   <nav className="nav_container">
-  <Sidebar/>
+  
     <div className="nav-content">
       <img
         className="website-logo"

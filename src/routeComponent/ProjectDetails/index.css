@@ -2,13 +2,12 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    border-top: 5px solid green;
    
 }
 
 .heading-text{
     font-size: 30px;
-    color:skyblue;
+    color:rgb(166, 20, 20);
 }
 
 .text{
@@ -19,7 +18,11 @@
 .text-color{
     color: black;
 }
-.card {
+.pro-details-back-container{
+    display: flex;
+    align-items: center;
+}
+.pro-details-container {
     padding: 0px;
     margin: 20px;
     box-shadow: 0px 2px 3px 2px;
@@ -29,26 +32,61 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.pro-heading-container{
+   width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emp-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   
+    
+}
 .emp-card-item{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
+    background-color: rgb(199, 191, 191);
+    margin: 10px;
+    padding: 0px;
     list-style-type: none;
     width: 20%;
     border-radius: 8px;
     border-top: 5px solid #44c4a1;
     box-shadow: 0px 3px 2px 0px;
+   
 }
+
 .emp-image{
-    width:100px;
+    width:80px;
+    border-radius: 120px;
+    margin:10px;
+}
+.emp-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    
+}
+.emp-name-card{
+    display: flex;
+  
 }
 .emp-name{
-    font-size: 22px;
+    font-size: 20px;
     color:green;
+}
+.emp-role-card{
+    display: flex;
+    
 }
 .emp-role{
     font-size: 16px;

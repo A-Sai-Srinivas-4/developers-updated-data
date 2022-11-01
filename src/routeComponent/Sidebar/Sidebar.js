@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import {GrProjects} from 'react-icons/gr'
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
-import './Sidebar.css';
+import "./Sidebar.css";
 import { IconContext } from 'react-icons';
+
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -29,12 +29,14 @@ function Sidebar() {
             </li>
             {SidebarData.map((item, index) => {
               return (
+                <div>
                 <li key={index} className={item.cName}>
                   <Link to={item.path} className="color">
-                    {item.icon}
+                    <span>{item.icon}</span>
                     <span >{item.title}</span>
                   </Link>
                 </li>
+                </div>
               );
             })}
           </ul>

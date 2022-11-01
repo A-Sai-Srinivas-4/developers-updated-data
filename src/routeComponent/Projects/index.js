@@ -10,13 +10,11 @@ import './index.css'
 const Projects = () => (
   <>
   <div>
-
+<Sidebar/>
     <h1 className="project-heading">Projects</h1>
    
     <ProjectData />
     </div>
-
-    <Footer />
     
     
   </>
