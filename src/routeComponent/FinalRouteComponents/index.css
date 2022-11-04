@@ -10,7 +10,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .app-container{
+  .responsive-container{
     background-image: url("https://wallpaperaccess.com/full/1155256.jpg");
     background-size: cover;
     min-height:100vh;

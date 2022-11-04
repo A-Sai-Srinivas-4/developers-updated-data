@@ -4,7 +4,7 @@ export const SidebarData = [
   {
     title: 'Transmart',
     path: '/project_details/Transmart',
-    icon: <GrProjects/>,
+    icon: <GrProjects color="red" />,
     cName: 'side-text'
   },
   {

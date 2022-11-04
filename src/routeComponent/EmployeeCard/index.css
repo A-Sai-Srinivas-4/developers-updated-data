@@ -1,15 +1,18 @@
+.dev-popup-container{
+   display: flex;
+   flex-direction: column;
+}
 .dev-card-item{
     display: flex;
     justify-content: space-between;
     background-color: rgb(217, 201, 201);
-    padding: 20px;
+    padding: 10px;
     list-style-type: none;
     border-radius: 10px;
     border-top: 5px solid #44c4a1;
     box-shadow: 0px 3px 2px 0px;
-    max-height:90%;
-    height:160px;
-    width:400px;
+    height:180px;
+    width:330px;
     max-width:100%;
  }
  
@@ -34,6 +37,7 @@
      border-radius: 120px;
      margin-top: 20px;
      border: 2px solid black; 
+     margin-right: 10px;
  }
  .heading {
     font-size: 16px;
@@ -49,6 +53,9 @@
  }
  .pro_card {
    display: flex;
+   
  }
 
- 
+ .projects-text{
+   font-size: 15px;
+ }

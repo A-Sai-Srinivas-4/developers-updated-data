@@ -76,4 +76,3 @@ import {MdOutlineArrowBackIosNew} from "react-icons/md"
     )
  }
  export default EmployeeDetails
-

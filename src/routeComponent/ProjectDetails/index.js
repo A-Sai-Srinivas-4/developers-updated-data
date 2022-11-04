@@ -68,21 +68,18 @@ const ProjectDetails = ({ match }) => {
       <div className="project-details-card ">
         <Sidebar />
         <div className="pro-details-back-container">
-        <div className="back-container">
-          <Link to="/projects" className="back-option">
-            <MdOutlineArrowBackIosNew size={25} />
-          </Link>
+          <div className="back-container">
+            <Link to="/projects" className="back-option">
+              <MdOutlineArrowBackIosNew size={25} />
+            </Link>
+          </div>
+          <div className="pro-heading-container">
+            <h1 className="project-heading">
+              Project Name :<span className="heading-text">{projectname}</span>
+            </h1>
+          </div>
         </div>
-        <div className="pro-heading-container">
-        <h1 className="project-heading">
-         
-          Project Name :<span className="heading-text">{projectname}</span>
-        </h1>
-        </div>
-        
-        
-        </div>
-        
+
         <div className="emp-card">
           {data.map((e) => {
             return (
@@ -97,14 +94,14 @@ const ProjectDetails = ({ match }) => {
                     className="emp-image"
                   />
                   <div className="emp-card-details">
-                  <div className="emp-name-card">
-                  <h1 className="emp-name">Name:- &nbsp; </h1>
-                    <h1 className="emp-name">{e.Name}</h1>
-                  </div>
-                  <div className="emp-role-card">
-                  <h1 className="emp-role">Name:- &nbsp; </h1>
-                    <h1 className="emp-role">{ e.Role }</h1>
-                  </div>
+                    <div className="emp-name-card">
+                      <h1 className="emp-name">Name:- &nbsp; </h1>
+                      <h1 className="emp-name">{e.Name}</h1>
+                    </div>
+                    <div className="emp-role-card">
+                      <h1 className="emp-role">Name:- &nbsp; </h1>
+                      <h1 className="emp-role">{e.Role}</h1>
+                    </div>
                   </div>
                 </li>
               </>

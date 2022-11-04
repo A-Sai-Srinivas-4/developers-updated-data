@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+//import {GrProjects} from 'react-icons/gr'
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
-import "./Sidebar.css";
-import { IconContext } from 'react-icons';
-
+import './Sidebar.css';
+//import { IconContext } from 'react-icons';
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -14,7 +14,7 @@ function Sidebar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+
         <div className='sidebar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
@@ -29,19 +29,17 @@ function Sidebar() {
             </li>
             {SidebarData.map((item, index) => {
               return (
-                <div>
                 <li key={index} className={item.cName}>
-                  <Link to={item.path} className="color">
-                    <span>{item.icon}</span>
-                    <span >{item.title}</span>
+                  <Link to={item.path} className="item-color">
+                    <i className='item-icons'>{item.icon}</i>
+                    <span className='item-text'>{item.title}</span>
                   </Link>
                 </li>
-                </div>
               );
             })}
           </ul>
         </nav>
-      </IconContext.Provider>
+      
     </>
   );
 }
