@@ -1,15 +1,4 @@
-.card-item{
-    padding:10px;
-}
-.profile-img{
-    height:100px;
-    width:100px;
-    border-radius: 100px;
-    display: flex;
-    align-self: center;
-}
-
-.nav-link {
+.card-link {
     font-family: 'Roboto';
     text-decoration: none;
     margin: 10px;

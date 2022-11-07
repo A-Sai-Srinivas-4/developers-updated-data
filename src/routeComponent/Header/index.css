@@ -1,3 +1,9 @@
+.nav_container {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
 .website-logo {
     width: 110px;
   }
@@ -7,12 +13,7 @@
       width: 165px;
     }
   }
-  .nav_container {
-    display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
-    margin-bottom: 20px;
-  }
+  
   .nav-content {
     display: flex;
     align-items: center;

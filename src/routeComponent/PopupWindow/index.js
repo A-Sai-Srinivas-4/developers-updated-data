@@ -1,9 +1,6 @@
-import { React, useState, useEffect } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import Data from "./../OldJson/jsonData.json";
-import { Link } from "react-router-dom";
-import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import "./index.css";
 
 const PopupWindow = (props) => {
@@ -34,17 +31,18 @@ const PopupWindow = (props) => {
       <Modal.Body className="body-color">
         <>
           <div className="details_container">
-            <div className="top_details">
-              <img src={data.image_url} alt="" className="images" />
-              <div className="cards">
-                <h6 className="pop-headings">
-                  NAME :-<span className="spans">{data.Name}</span>
+            <div className="top_details_container">
+              <img src={data.image_url} alt="" className="pop-image" />
+              <div className="pop-card">
+                <h6 className="pop-heading">
+                  NAME :-<span className="pop-span">{data.Name}</span>
                 </h6>
-                <h1 className="pop-headings">
-                  ROLE :-<span className="spans">{data.Role}</span>
+                <h1 className="pop-heading">
+                  ROLE :-<span className="pop-span">{data.Role}</span>
                 </h1>
-                <h1 className="pop-headings">
-                  EXPERIENCE :- <span className="spans">{data.Experience}</span>
+                <h1 className="pop-heading">
+                  EXPERIENCE :-{" "}
+                  <span className="pop-span">{data.Experience}</span>
                 </h1>
               </div>
             </div>
@@ -52,21 +50,21 @@ const PopupWindow = (props) => {
               {projectData.map((eachItems) => {
                 return (
                   <div className="pop-project_container">
-                    <h1 className="pop-headings">
+                    <h1 className="pop-heading">
                       PROJECTS :
-                      <span className="spans">{`${eachItems.Name}`}</span>
+                      <span className="pop-span">{`${eachItems.Name}`}</span>
                     </h1>
-                    <h1 className="pop-headings">
+                    <h1 className="pop-heading">
                       Role :{" "}
-                      <span className="spans">{`${eachItems.Role}`}</span>
+                      <span className="pop-span">{`${eachItems.Role}`}</span>
                     </h1>
-                    <h1 className="pop-headings">
+                    <h1 className="pop-heading">
                       Tech_Stack :
-                      <span className="spans">{`${eachItems.Tech_Stack}`}</span>
+                      <span className="pop-span">{`${eachItems.Tech_Stack}`}</span>
                     </h1>
-                    <h1 className="pop-headings">
+                    <h1 className="pop-heading">
                       Allocation :
-                      <span className="spans">{`${eachItems.Allocation}`}</span>
+                      <span className="pop-span">{`${eachItems.Allocation}`}</span>
                     </h1>
                   </div>
                 );

@@ -2,9 +2,35 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
 }
-
+.project-details-back-container{
+    display: flex;
+    align-items: center;
+}
+.back-container{
+    display: inline;
+    align-items: center;
+  }
+.back-option{
+    display: inline;
+    margin-left:50px;
+    color:#fff;
+    border: 2px solid;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+.project-heading-container{
+    width:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .project-heading {
+    text-align: center;
+    color: #fff;
+  }
 .heading-text{
     font-size: 30px;
     color:rgb(166, 20, 20);
@@ -14,38 +40,12 @@
     font-size: 20px;
     color:skyblue;
 }
-
-.text-color{
-    color: black;
-}
-.pro-details-back-container{
-    display: flex;
-    align-items: center;
-}
-.pro-details-container {
-    padding: 0px;
-    margin: 20px;
-    box-shadow: 0px 2px 3px 2px;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.pro-heading-container{
-   width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .emp-card{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
-   
-    
+    margin-top: 20px; 
 }
 .emp-card-item{
     display: flex;
@@ -62,9 +62,7 @@
     border-radius: 8px;
     border-top: 5px solid #44c4a1;
     box-shadow: 0px 3px 2px 0px;
-   
 }
-
 .emp-image{
     width:80px;
     border-radius: 120px;
@@ -75,11 +73,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
 }
 .emp-name-card{
     display: flex;
-  
 }
 .emp-name{
     font-size: 18px;
@@ -92,6 +88,4 @@
 .emp-role{
     font-size: 16px;
     color:brown;
-    
-
 }
