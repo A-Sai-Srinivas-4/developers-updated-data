@@ -99,7 +99,7 @@ const ProjectDetails = ({ match }) => {
                       <h1 className="emp-name">{e.Name}</h1>
                     </div>
                     <div className="emp-role-card">
-                      <h1 className="emp-role">Name:- &nbsp; </h1>
+                      <h1 className="emp-role">Name:-&nbsp;</h1>
                       <h1 className="emp-role">{e.Role}</h1>
                     </div>
                   </div>

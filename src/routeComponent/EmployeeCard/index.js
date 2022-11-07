@@ -22,34 +22,31 @@ const EmployeeCard = (props) => {
 
   return (
     <>
-    
-      
-    
-    
     <ButtonToolbar>
     <Button 
     variant = "black"
     onClick={() => setModalShow(true)}
+    className="button"
     > 
     <li className="dev-card-item" style={{ borderTopColor: randomcolors() }}>
         <img src={image_url} alt="imagess" className="image" />
         <div className="emp-card-details">
           <div className="emp-name-card">
-            <h1 className="emp-name">Name:- &nbsp; </h1>
-            <h1 className="emp-name">{Name}</h1>
+            <h1 className="emp-heading">Name:-&nbsp;</h1>
+            <h1 className="emp-description">{Name}</h1>
           </div>
           <div className="emp-role-card">
-            <h1 className="emp-role">Role:- &nbsp; </h1>
-            <h1 className="emp-role">{Role}</h1>
+            <h1 className="emp-heading">Role:-</h1>
+            <h1 className="emp-description">{Role}</h1>
           </div>
-          <div className="pro_card">
-            <h2 className="discription">Project-Name:- &nbsp; </h2>
+          <div className="project_names_card">
+            <h2 className="emp-heading">Project-Name:-&nbsp; </h2>
 
-            <p className='projects-text'>
+            <p className='projects'>
               {Projects.map((each) => (
-                <h6>{each.Name}</h6>
+                <h6 className='emp-description'>{each.Name}</h6>
               ))}
-            </p>
+            </p><br/>
           </div>
         </div>
       </li>

@@ -16,6 +16,13 @@
           "Next Release": "20/10/2022",
           "Role": "Developer",
           "Tech_Stack": "React,P9"
+        },{
+          "Name": "IAVR Enterprise",
+          "Current Sprint": "",
+          "Next Release": "20/10/2022",
+          "Role": "Developer",
+          "Tech_Stack": "",
+          "Allocation": "30%"
         }
       ]
     },
@@ -64,7 +71,16 @@
           "Role": "QA",
           "Tech_Stack": "React,P9",
           "Allocation": "30%"
+        },
+        {
+          "Name": "PAC",
+          "Current Sprint": "",
+          "Next Release": "20/10/2022",
+          "Role": "Scrum Master",
+          "Tech_Stack": "",
+          "Allocation": "30%"
         }
+       
       ]
     },
     {
@@ -294,7 +310,7 @@
     {
       "id" : 13,
       "Name": "Sai Srinivas",
-      "Role": "Junior software developer",
+      "Role":"Junior software developer",
       "image_url" : "https://www.kindpng.com/picc/m/4-41409_developer-png-png-download-developer-png-no-background.png",
       "Experience": "1 Year",
       "TechStack": "",

@@ -4,16 +4,17 @@
 }
 .dev-card-item{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: rgb(217, 201, 201);
     padding: 10px;
     list-style-type: none;
     border-radius: 10px;
     border-top: 5px solid #44c4a1;
     box-shadow: 0px 3px 2px 0px;
-    height:180px;
-    width:330px;
-    max-width:100%;
+    max-height: 160px;
+    height:100%;
+    width:100%;
+    max-width:370px;
  }
  
  .nav-link {
@@ -31,17 +32,22 @@
      flex-direction: column;
  }
  
+ 
  .image {
      width: 80px;
      height: 80px;
      border-radius: 120px;
-     margin-top: 20px;
+     margin-top: 10px;
      border: 2px solid black; 
-     margin-right: 10px;
+     margin-right: 20px;
  }
- .heading {
-    font-size: 16px;
+ .emp-heading {
+    font-size: 18px;
 
+ }
+ .emp-description{
+   font-size: 16px;
+   color:rgb(9, 105, 157);
  }
 
  .discription {
@@ -51,11 +57,16 @@
  .project-name{
    display: flex;
  }
- .pro_card {
+ .project_names_card {
    display: flex;
+ 
+   
    
  }
-
- .projects-text{
-   font-size: 15px;
+.project-name{
+   font-size: 16px;
+}
+ 
+ .button{
+   transition: 0ms;
  }

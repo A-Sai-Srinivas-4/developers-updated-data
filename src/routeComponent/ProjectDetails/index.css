@@ -82,14 +82,16 @@
   
 }
 .emp-name{
-    font-size: 20px;
+    font-size: 18px;
     color:green;
 }
 .emp-role-card{
     display: flex;
-    
+    justify-content: flex-start;
 }
 .emp-role{
     font-size: 16px;
     color:brown;
+    
+
 }
