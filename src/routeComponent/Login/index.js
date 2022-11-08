@@ -96,9 +96,9 @@ const Login = () => {
 
   const onSubmitSuccess = () => {
     console.log("SUCCESS");
-    {
+    
       window.location.href = "/home";
-    }
+    
   };
 
   const onSubmitFailure = () => {
