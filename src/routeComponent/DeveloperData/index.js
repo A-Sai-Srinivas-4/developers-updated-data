@@ -37,6 +37,26 @@ const DeveloperData = () => {
     </ul>
   );
 
+  const showDevDetailsByOnSite = (event) => {
+    const myArray = [];
+    Data.map(
+      (each) => each.Offshore === event.target.value && [myArray.push(each)]
+    );
+    myArray.forEach((element) => {
+      setDevList(myArray);
+    });
+  };
+
+  const showDevDetailsByOffshore = (event) => {
+    const myArray = [];
+    Data.map(
+      (each) => each.Offshore === event.target.value && [myArray.push(each)]
+    );
+    myArray.forEach((element) => {
+      setDevList(myArray);
+    });
+  };
+
   const showDevDetailsByRole = (event) => {
     const myArray = [];
     Data.map(
@@ -47,7 +67,47 @@ const DeveloperData = () => {
     });
   };
 
-  const roleDropdown = () => {
+  const DropdownByOnSite = () => {
+    const onsiteDetails = [...new Set(Data.map((e) => e.Offshore === "False" && "False"))];
+
+    console.log(onsiteDetails);
+
+    return (
+      
+        <div className="off-shore-button-container">
+          <button
+            className="off-shore-option"
+            onClick={showDevDetailsByOnSite}
+            value="False"
+          >
+            On Site
+          </button>
+        </div>
+     
+    );
+  };
+
+  const DropdownByOffshore = () => {
+    const offshoreDetails = [...new Set(Data.map((e) => e.Offshore && "True"))];
+
+    //console.log(offshoreDetails);
+
+    return (
+      
+        <div className="off-shore-button-container">
+          <button
+            className="off-shore-option"
+            onClick={showDevDetailsByOffshore}
+            value="True"
+          >
+            Off Shore
+          </button>
+        </div>
+     
+    );
+  };
+
+  const DropdownByRole = () => {
     const roleDetails = [...new Set(Data.map((e) => e.Role))];
 
     //console.log(roleDetails)
@@ -58,9 +118,6 @@ const DeveloperData = () => {
           <Dropdown.Toggle variant="success" id="dropdown-basic">
             Role
           </Dropdown.Toggle>
-          <button className="clear-btn" onClick={() => setDevList(Data)}>
-            Clear
-          </button>
         </div>
 
         <Dropdown.Menu>
@@ -85,7 +142,15 @@ const DeveloperData = () => {
   return (
     <>
       <div className="dev-display-container">
-        {roleDropdown()}
+        <div className="dropdown-container">
+          {DropdownByRole()}
+          {DropdownByOffshore()}
+          {DropdownByOnSite()}
+          <button className="clear-btn" onClick={() => setDevList(Data)}>
+            Clear
+          </button>
+        </div>
+
         <div>{renderSearchSection()}</div>
       </div>
 
