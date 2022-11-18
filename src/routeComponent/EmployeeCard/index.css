@@ -1,3 +1,11 @@
+
+@media screen {
+   .dev-card-item{
+   height:200px;
+   width:100%;
+   max-width:370px;
+   }
+}
 .dev-card-item{
    display: flex;
    justify-content: flex-start;
@@ -6,11 +14,7 @@
    list-style-type: none;
    border-radius: 10px;
    border-top: 5px solid #44c4a1;
-   box-shadow: 0px 3px 2px 0px;
-   max-height: 160px;
-   height:100%;
-   width:100%;
-   max-width:370px;
+   box-shadow: 0px 3px 2px 0px; 
 }
 .dev-image {
    width: 80px;

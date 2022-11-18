@@ -2,6 +2,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    
 }
 .project-details-back-container{
     display: flex;
@@ -43,10 +45,11 @@
 .emp-card{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
 }
+
 .emp-card-item{
     display: flex;
     flex-direction: column;
@@ -76,16 +79,38 @@
 }
 .emp-name-card{
     display: flex;
+    flex-direction: column;
 }
 .emp-name{
-    font-size: 18px;
-    color:green;
+    font-size: 22px;
+    color:rgb(54, 214, 239);
+    margin-left: 10px;
 }
 .emp-role-card{
     display: flex;
+   
     justify-content: flex-start;
 }
 .emp-role{
     font-size: 16px;
     color:brown;
+}
+.team-heading{
+    display: flex;
+    align-self: flex-start;
+    color:#fff;
+    font-size: 25px;
+}
+.emp-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+.emp-card{
+    display: flex;
+    align-items: center;
+  
 }

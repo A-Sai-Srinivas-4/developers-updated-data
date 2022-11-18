@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import ProjectData from "../ProjectData";
+import SwipeBar from "../SwipeBar";
 import Sidebar from "../Sidebar/Sidebar";
 import "./index.css";
 
 const Projects = () => (
   <>
     <div>
-      <Sidebar />
+    
       <div className="project-details-back-container">
+      <SwipeBar/>
         <div className="back-container">
           <Link to="/" className="back-option">
             <MdOutlineArrowBackIosNew size={25} />

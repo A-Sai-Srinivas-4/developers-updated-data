@@ -8,14 +8,14 @@ export const SidebarData = [
     cName: 'side-text'
   },
   {
-    title: 'IAVR Enterprise',
+    title: 'IAVR',
     path: '/project_details/IAVR Enterprise',
     icon: <GrProjects />,
     cName: 'side-text'
   },
   {
-    title: 'PCA',
-    path: '/project_details/PCA',
+    title: 'JJT',
+    path: '/project_details/JJT',
     icon: <GrProjects />,
     cName: 'side-text'
   },
@@ -26,14 +26,8 @@ export const SidebarData = [
     cName: 'side-text'
   },
   {
-    title: 'Genie Project',
-    path: '/project_details/Genie Project',
-    icon: <GrProjects />,
-    cName: 'side-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
+    title: 'Genie',
+    path: '/project_details/Genie',
     icon: <GrProjects />,
     cName: 'side-text'
   }

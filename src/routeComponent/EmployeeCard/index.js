@@ -13,7 +13,11 @@ const EmployeeCard = (props) => {
   let addModalClose = () => setModalShow(false);
 
   const { cardDetails } = props;
-  const { id, Name, Role, image_url, Projects } = cardDetails;
+  const { ID, Name,Image_url,Role, Details } = cardDetails;
+  const {Advance} = Details;
+  const {Projects} = Advance;
+  // const { id, Name, Role, image_url, Projects } = cardDetails;
+  //console.log(Projects)
 
   return (
     <>
@@ -23,7 +27,7 @@ const EmployeeCard = (props) => {
             className="dev-card-item"
             style={{ borderTopColor: randomcolors() }}
           >
-            <img src={image_url} alt="imagess" className="dev-image" />
+            <img src={Image_url} alt="imagess" className="dev-image" />
             <div className="emp-card-details">
               <div className="emp-name-card">
                 <h1 className="emp-heading">Name:-&nbsp;</h1>
@@ -37,9 +41,9 @@ const EmployeeCard = (props) => {
                 <h2 className="emp-heading">Project-Name:-&nbsp; </h2>
 
                 <p className="projects">
-                  {Projects.map((each) => (
-                    <h6 className="emp-description">{each.Name}</h6>
-                  ))}
+                  {Projects.length > 0 ? Projects.map((each) => (
+                    <h6 className="emp-description">{each.Project}</h6>
+                  )) : <h6 className="emp-description">NA</h6>}
                 </p>
                 <br />
               </div>
@@ -47,7 +51,7 @@ const EmployeeCard = (props) => {
           </li>
         </Button>
         <PopupWindow
-          key={id}
+          key={ID}
           show={addModalShow}
           onHide={addModalClose}
           carddetails={cardDetails}

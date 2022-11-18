@@ -8,6 +8,7 @@ import Header from "./routeComponent/Header";
 import Footer from "./routeComponent/Footer";
 import NotFound from "./routeComponent/NotFound";
 import "./App.css";
+import Sidebar from "./routeComponent/Sidebar/Sidebar";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <div className="app-container">
         <div className="responsive-container">
           <div className="app-body">
-            <Header />
+            
             <Switch>
               <Route exact path="/" component={Login} />
               <Route exact path="/home" component={Home} />

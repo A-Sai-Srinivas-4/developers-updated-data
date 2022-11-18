@@ -2,9 +2,11 @@ import DeveloperData from "../DeveloperData";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import "./index.css";
+import SwipeBar from "../SwipeBar"
 
 const Developers = () => (
   <>
+  <SwipeBar/>
     <div>
       <div className="project-details-back-container">
         <div className="back-container">

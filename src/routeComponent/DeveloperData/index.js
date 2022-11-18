@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Data from "../Json/jsonData.json";
+import Data from "../Json/data.json";
 import EmployeeCard from "../EmployeeCard";
 import "./index.css";
 
 const DeveloperData = () => {
   const [search, setSearch] = useState("");
-  const [devList, setDevList] = useState([]);
+  const [devEmpList, setDevEmpList] = useState([]);
+  const [devProList, setDevProList] = useState([]);
 
   useEffect(() => {
-    setDevList(Data);
+    setDevEmpList(Data.Resources.Empolyee_Details);
+    setDevProList(Data.Resources.Project_Details);
   }, [search]);
+
+  //console.log(Data.Resources)
 
   const renderSearchSection = () => (
     <div className="search-container">
@@ -27,7 +31,7 @@ const DeveloperData = () => {
 
   const renderDevList = () => (
     <ul className="dev-cards-list">
-      {devList
+      {devEmpList
         .filter((each) =>
           each.Name.toLowerCase().includes(search.toLowerCase())
         )
@@ -39,36 +43,36 @@ const DeveloperData = () => {
 
   const showDevDetailsByOnSite = (event) => {
     const myArray = [];
-    Data.map(
-      (each) => each.Offshore === event.target.value && [myArray.push(each)]
+    Data.Resources.Empolyee_Details.map(
+      (each) => each.Details.Advance.Offshore === event.target.value && [myArray.push(each)]
     );
     myArray.forEach((element) => {
-      setDevList(myArray);
+      setDevEmpList(myArray);
     });
   };
 
   const showDevDetailsByOffshore = (event) => {
     const myArray = [];
-    Data.map(
-      (each) => each.Offshore === event.target.value && [myArray.push(each)]
+    Data.Resources.Empolyee_Details.map(
+      (each) => each.Details.Advance.Offshore === event.target.value && [myArray.push(each)]
     );
     myArray.forEach((element) => {
-      setDevList(myArray);
+      setDevEmpList(myArray);
     });
   };
 
   const showDevDetailsByRole = (event) => {
     const myArray = [];
-    Data.map(
+    Data.Resources.Empolyee_Details.map(
       (each) => each.Role === event.target.value && [myArray.push(each)]
     );
     myArray.forEach((element) => {
-      setDevList(myArray);
+      setDevEmpList(myArray);
     });
   };
 
   const DropdownByOnSite = () => {
-    const onsiteDetails = [...new Set(Data.map((e) => e.Offshore === "False" && "False"))];
+    const onsiteDetails = [...new Set(Data.Resources.Empolyee_Details.map((e) => e.Details.Advance.Offshore === "False" && "False"))];
 
     console.log(onsiteDetails);
 
@@ -88,9 +92,9 @@ const DeveloperData = () => {
   };
 
   const DropdownByOffshore = () => {
-    const offshoreDetails = [...new Set(Data.map((e) => e.Offshore && "True"))];
+    const offshoreDetails = [...new Set(Data.Resources.Empolyee_Details.map((e) => e.Details.Advance.Offshore && "True"))];
 
-    //console.log(offshoreDetails);
+    console.log(offshoreDetails);
 
     return (
       
@@ -108,7 +112,7 @@ const DeveloperData = () => {
   };
 
   const DropdownByRole = () => {
-    const roleDetails = [...new Set(Data.map((e) => e.Role))];
+    const roleDetails = [...new Set(Data.Resources.Empolyee_Details.map((e) => e.Role))];
 
     //console.log(roleDetails)
 
@@ -146,7 +150,7 @@ const DeveloperData = () => {
           {DropdownByRole()}
           {DropdownByOffshore()}
           {DropdownByOnSite()}
-          <button className="clear-btn" onClick={() => setDevList(Data)}>
+          <button className="clear-btn" onClick={() => setDevEmpList(Data.Resources.Empolyee_Details)}>
             Clear
           </button>
         </div>
