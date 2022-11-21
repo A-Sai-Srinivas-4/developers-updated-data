@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PopupWindow from "../PopupWindow";
 import { Button, ButtonToolbar } from "react-bootstrap";
 import "./index.css";
@@ -34,7 +34,7 @@ const EmployeeCard = (props) => {
 
                 <h4 className="headings">{Name}</h4>
               </div>
-    <hr/>
+              <hr />
               <div className="card_bottom">
                 <h6 className="role_heading">
                   ROLE :- <span>{Role}</span>
@@ -49,13 +49,11 @@ const EmployeeCard = (props) => {
                     ) : (
                       <h6> -------- </h6>
                     )}
-
-                    <h6></h6>
                   </div>
                 </div>
 
                 {Projects.length > 2 ? (
-                  <a className="anchor">Show-More >>></a>
+                  <h3 className="anchor">Show-More >>></h3>
                 ) : (
                   " "
                 )}

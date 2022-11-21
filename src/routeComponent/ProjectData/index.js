@@ -16,11 +16,9 @@ const ProjectData = () => {
     return y;
   });
 
-
   // //console.log(newArray);
   // const uniq_project_names = [...details,...new Set(newArray)];
   // //console.log(uniq_project_names)
-
 
   return (
     <>

@@ -26,9 +26,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import { GrProjects } from "react-icons/gr";
 import GroupsIcon from "@mui/icons-material/Groups";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import Link from '@mui/material/Link';
+import Link from "@mui/material/Link";
 //import SplitButton from "./ButtonGroup";
-
 
 const drawerWidth = 240;
 
@@ -227,7 +226,7 @@ export default function MiniDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        
+
         <List>
           {data.map((text, index) => (
             <Link href={text.path} key={text.id}>
@@ -256,10 +255,9 @@ export default function MiniDrawer() {
                 </ListItemButton>
               </ListItem>
             </Link>
-            
           ))}
         </List>
-        
+
         <Divider />
       </Drawer>
     </Box>

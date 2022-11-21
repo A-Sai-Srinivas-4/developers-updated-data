@@ -1,15 +1,11 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Data from "../Json/data.json";
-import { Link } from "react-router-dom";
-import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import GetSidebar from "../Sidebar/Sidebar";
 import Header from "../Header";
 import "./index.css";
 
 const ProjectDetails = ({ match }) => {
   const { projectname } = useParams();
-  useEffect = (() => {}, GetSidebar);
 
   const myObj = {
     Emp_Details: {
@@ -25,20 +21,20 @@ const ProjectDetails = ({ match }) => {
     Current_Sprint: [],
   };
 
-  const fetchProjectData = () => {
-    Data.Resources.Project_Details.map(
-      (each) =>
-        each.Name === projectname &&
-        myObj.Teams.Dev_Team.push(each.Details.Advance.Development_Team) &&
-        myObj.Teams.QA_Team.push(each.Details.Advance.QA_Team) &&
-        myObj.Scrum_Master.push(each.Scrum_Master) &&
-        myObj.Current_Sprint.push(each.Current_Sprint)
-    );
+  // const fetchProjectData = () => {
+  //   Data.Resources.Project_Details.map(
+  //     (each) =>
+  //       each.Name === projectname &&
+  //       myObj.Teams.Dev_Team.push(each.Details.Advance.Development_Team) &&
+  //       myObj.Teams.QA_Team.push(each.Details.Advance.QA_Team) &&
+  //       myObj.Scrum_Master.push(each.Scrum_Master) &&
+  //       myObj.Current_Sprint.push(each.Current_Sprint)
+  //   );
 
-    return myObj;
-  };
+  //   return myObj;
+  // };
 
-  const projDetails = fetchProjectData();
+  //const projDetails = fetchProjectData();
   //console.log(projDetails)
 
   const fetchEmpData = () => {
@@ -71,22 +67,22 @@ const ProjectDetails = ({ match }) => {
       ])
   );
 
-  console.log(data);
+  //console.log(data);
 
   const getDeptOrder = (e) => <h1 className="emp-name">{e.Name}</h1>;
 
   return (
     <>
-    <Header />
+      <Header />
       <div className="sidebar-project-details-container">
         {GetSidebar()}
         <div className="project-details-card ">
           <div className="emp-details-container">
             <div className="project-heading-container">
-              <h1 className="project-heading">
+              <h4 className="project-heading">
                 Project Name :
-                <span className="heading-text">{projectname}</span>
-              </h1>
+                <span className="heading-text">&nbsp;{projectname}</span>
+              </h4>
             </div>
             <div className="emp-card">
               <h1 className="team-heading">Scrum Master :</h1>
@@ -96,7 +92,7 @@ const ProjectDetails = ({ match }) => {
             </div>
 
             <div className="emp-card">
-              <h1 className="team-heading">Development Team :</h1>
+              <h4 className="team-heading">Development Team :</h4>
               <div className="emp-name-card">
                 {data.map((e) => {
                   return (
@@ -106,7 +102,7 @@ const ProjectDetails = ({ match }) => {
               </div>
             </div>
             <div className="emp-card">
-              <h1 className="team-heading">QA Team :</h1>
+              <h4 className="team-heading">QA Team :</h4>
               <div className="emp-name-card">
                 {data.map((e) => {
                   return <>{e.Team === "QA" && getDeptOrder(e)}</>;

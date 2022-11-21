@@ -8,11 +8,9 @@ import "./index.css";
 const DeveloperData = () => {
   const [search, setSearch] = useState("");
   const [devEmpList, setDevEmpList] = useState([]);
-  const [devProList, setDevProList] = useState([]);
 
   useEffect(() => {
     setDevEmpList(Data.Resources.Empolyee_Details);
-    setDevProList(Data.Resources.Project_Details);
   }, [search]);
 
   //console.log(Data.Resources)

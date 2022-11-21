@@ -1,6 +1,6 @@
 .dev-card-item {
   background-color: rgb(217, 201, 201);
-  height: 30vh;
+  height: 35vh;
   width: 22vw;
   list-style-type: none;
   border-radius: 10px;
@@ -69,7 +69,8 @@ span {
 }
 .anchor {
   color: blue;
-  margin-left: 140px;
+  margin-left: 150px;
+  margin-top: 10px;
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;

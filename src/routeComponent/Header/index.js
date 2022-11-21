@@ -9,7 +9,6 @@ import IconButton from "@mui/material/IconButton";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import HomeIcon from "@mui/icons-material/Home";
 import "./index.css";
 
 const Header = () => {
@@ -37,20 +36,65 @@ const Header = () => {
             alt="website logo"
           />
         </Link>
-        <Stack spacing={2} direction="row" >
-          <Button href="/" variant="text" sx={{color:"black",fontSize:"18px",fontFamily:"roboto", fontWeight:"600"}}>
+        <Stack spacing={2} direction="row">
+          <Button
+            href="/"
+            variant="text"
+            sx={{
+              color: "black",
+              fontSize: "18px",
+              fontFamily: "roboto",
+              fontWeight: "600",
+            }}
+          >
             Home
           </Button>
-          <Button href="/projects" variant="text" sx={{color:"black",fontSize:"18px",fontFamily:"roboto", fontWeight:"600"}}>
-          Projects
-        </Button>
-          <Button href="/developers" variant="text" sx={{color:"black",fontSize:"18px",fontFamily:"roboto", fontWeight:"600"}}>
+          <Button
+            href="/projects"
+            variant="text"
+            sx={{
+              color: "black",
+              fontSize: "18px",
+              fontFamily: "roboto",
+              fontWeight: "600",
+            }}
+          >
+            Projects
+          </Button>
+          <Button
+            href="/developers"
+            variant="text"
+            sx={{
+              color: "black",
+              fontSize: "18px",
+              fontFamily: "roboto",
+              fontWeight: "600",
+            }}
+          >
             Developers
           </Button>
-          <Button href="/about" variant="text" sx={{color:"black" ,fontSize:"18px",fontFamily:"roboto", fontWeight:"600"}}>
+          <Button
+            href="/about"
+            variant="text"
+            sx={{
+              color: "black",
+              fontSize: "18px",
+              fontFamily: "roboto",
+              fontWeight: "600",
+            }}
+          >
             About
           </Button>
-          <Button href="/contact" variant="text" sx={{color:"black",fontSize:"18px",fontFamily:"roboto", fontWeight:"600"}}>
+          <Button
+            href="/contact"
+            variant="text"
+            sx={{
+              color: "black",
+              fontSize: "18px",
+              fontFamily: "roboto",
+              fontWeight: "600",
+            }}
+          >
             Contact
           </Button>
         </Stack>

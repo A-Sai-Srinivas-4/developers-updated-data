@@ -1,9 +1,9 @@
-import Header from "../Header"
+import Header from "../Header";
 import "./index.css";
 
 const Home = () => (
   <>
-  <Header />
+    <Header />
     <div className="home-container">
       <div className="home-content">
         <h1 className="home-heading">AIFA</h1>

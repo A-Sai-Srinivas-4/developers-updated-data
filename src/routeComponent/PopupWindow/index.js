@@ -40,7 +40,9 @@ const PopupWindow = (props) => {
                 </h1>
                 <h1 className="pop-heading">
                   EXPERIENCE :-{" "}
-                  <span className="pop-span">{data.Details.Advance.Experience}</span>
+                  <span className="pop-span">
+                    {data.Details.Advance.Experience}
+                  </span>
                 </h1>
               </div>
             </div>
@@ -53,8 +55,7 @@ const PopupWindow = (props) => {
                       <span className="pop-span">{`${eachItems.Project}`}</span>
                     </h1>
                     <h1 className="pop-heading">
-                      Role :{" "}
-                      <span className="pop-span">{`${data.Role}`}</span>
+                      Role : <span className="pop-span">{`${data.Role}`}</span>
                     </h1>
                     <h1 className="pop-heading">
                       Tech_Stack :
