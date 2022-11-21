@@ -1,13 +1,15 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Data from "../Json/data.json";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
-//import Sidebar from "../Sidebar/Sidebar";
-import SwipeBar from "../SwipeBar";
+import GetSidebar from "../Sidebar/Sidebar";
+import Header from "../Header";
 import "./index.css";
 
 const ProjectDetails = ({ match }) => {
   const { projectname } = useParams();
+  useEffect = (() => {}, GetSidebar);
 
   const myObj = {
     Emp_Details: {
@@ -75,45 +77,41 @@ const ProjectDetails = ({ match }) => {
 
   return (
     <>
-    
-      <div className="project-details-card ">
-        <div className="project-details-back-container">
-          <div className="back-container">
-            <Link to="/projects" className="back-option">
-              <MdOutlineArrowBackIosNew size={25} />
-            </Link>
-          </div>
-          <div className="project-heading-container">
-            <h1 className="project-heading">
-              Project Name :<span className="heading-text">{projectname}</span>
-            </h1>
-          </div>
-        </div>
-
-        <div className="emp-details-container">
-          <div className="emp-card">
-            <h1 className="team-heading">Scrum Master :</h1>
-            {data.map((e) => {
-              return <>{e.Role === "Scrum Master" && getDeptOrder(e)}</>;
-            })}
-          </div>
-
-          <div className="emp-card">
-            <h1 className="team-heading">Development Team :</h1>
-            <div className="emp-name-card">
+    <Header />
+      <div className="sidebar-project-details-container">
+        {GetSidebar()}
+        <div className="project-details-card ">
+          <div className="emp-details-container">
+            <div className="project-heading-container">
+              <h1 className="project-heading">
+                Project Name :
+                <span className="heading-text">{projectname}</span>
+              </h1>
+            </div>
+            <div className="emp-card">
+              <h1 className="team-heading">Scrum Master :</h1>
               {data.map((e) => {
-                return (
-                  <>{e.Team === "Full-Stack Developer" && getDeptOrder(e)}</>
-                );
+                return <>{e.Role === "Scrum Master" && getDeptOrder(e)}</>;
               })}
             </div>
-          </div>
-          <div className="emp-card">
-            <h1 className="team-heading">QA Team :</h1>
-            <div className="emp-name-card">
-              {data.map((e) => {
-                return <>{e.Team === "QA" && getDeptOrder(e)}</>;
-              })}
+
+            <div className="emp-card">
+              <h1 className="team-heading">Development Team :</h1>
+              <div className="emp-name-card">
+                {data.map((e) => {
+                  return (
+                    <>{e.Team === "Full-Stack Developer" && getDeptOrder(e)}</>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="emp-card">
+              <h1 className="team-heading">QA Team :</h1>
+              <div className="emp-name-card">
+                {data.map((e) => {
+                  return <>{e.Team === "QA" && getDeptOrder(e)}</>;
+                })}
+              </div>
             </div>
           </div>
         </div>

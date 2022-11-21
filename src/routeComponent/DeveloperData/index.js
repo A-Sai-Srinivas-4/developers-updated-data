@@ -44,7 +44,10 @@ const DeveloperData = () => {
   const showDevDetailsByOnSite = (event) => {
     const myArray = [];
     Data.Resources.Empolyee_Details.map(
-      (each) => each.Details.Advance.Offshore === event.target.value && [myArray.push(each)]
+      (each) =>
+        each.Details.Advance.Offshore === event.target.value && [
+          myArray.push(each),
+        ]
     );
     myArray.forEach((element) => {
       setDevEmpList(myArray);
@@ -54,7 +57,10 @@ const DeveloperData = () => {
   const showDevDetailsByOffshore = (event) => {
     const myArray = [];
     Data.Resources.Empolyee_Details.map(
-      (each) => each.Details.Advance.Offshore === event.target.value && [myArray.push(each)]
+      (each) =>
+        each.Details.Advance.Offshore === event.target.value && [
+          myArray.push(each),
+        ]
     );
     myArray.forEach((element) => {
       setDevEmpList(myArray);
@@ -72,47 +78,57 @@ const DeveloperData = () => {
   };
 
   const DropdownByOnSite = () => {
-    const onsiteDetails = [...new Set(Data.Resources.Empolyee_Details.map((e) => e.Details.Advance.Offshore === "False" && "False"))];
+    const onsiteDetails = [
+      ...new Set(
+        Data.Resources.Empolyee_Details.map(
+          (e) => e.Details.Advance.Offshore === "False" && "False"
+        )
+      ),
+    ];
 
     console.log(onsiteDetails);
 
     return (
-      
-        <div className="off-shore-button-container">
-          <button
-            className="off-shore-option"
-            onClick={showDevDetailsByOnSite}
-            value="False"
-          >
-            On Site
-          </button>
-        </div>
-     
+      <div className="off-shore-button-container">
+        <button
+          className="off-shore-option"
+          onClick={showDevDetailsByOnSite}
+          value="False"
+        >
+          On Site
+        </button>
+      </div>
     );
   };
 
   const DropdownByOffshore = () => {
-    const offshoreDetails = [...new Set(Data.Resources.Empolyee_Details.map((e) => e.Details.Advance.Offshore && "True"))];
+    const offshoreDetails = [
+      ...new Set(
+        Data.Resources.Empolyee_Details.map(
+          (e) => e.Details.Advance.Offshore && "True"
+        )
+      ),
+    ];
 
     console.log(offshoreDetails);
 
     return (
-      
-        <div className="off-shore-button-container">
-          <button
-            className="off-shore-option"
-            onClick={showDevDetailsByOffshore}
-            value="True"
-          >
-            Off Shore
-          </button>
-        </div>
-     
+      <div className="off-shore-button-container">
+        <button
+          className="off-shore-option"
+          onClick={showDevDetailsByOffshore}
+          value="True"
+        >
+          Off Shore
+        </button>
+      </div>
     );
   };
 
   const DropdownByRole = () => {
-    const roleDetails = [...new Set(Data.Resources.Empolyee_Details.map((e) => e.Role))];
+    const roleDetails = [
+      ...new Set(Data.Resources.Empolyee_Details.map((e) => e.Role)),
+    ];
 
     //console.log(roleDetails)
 
@@ -124,18 +140,16 @@ const DeveloperData = () => {
           </Dropdown.Toggle>
         </div>
 
-        <Dropdown.Menu>
+        <Dropdown.Menu className="drop-menu-container">
           {roleDetails.map((e) => {
             return (
-              <div>
-                <input
-                  type="button"
-                  className="role-option"
-                  name="Role"
-                  value={e}
-                  onClick={showDevDetailsByRole}
-                />
-              </div>
+              <input
+                type="button"
+                className="role-option"
+                name="Role"
+                value={e}
+                onClick={showDevDetailsByRole}
+              />
             );
           })}
         </Dropdown.Menu>
@@ -150,7 +164,10 @@ const DeveloperData = () => {
           {DropdownByRole()}
           {DropdownByOffshore()}
           {DropdownByOnSite()}
-          <button className="clear-btn" onClick={() => setDevEmpList(Data.Resources.Empolyee_Details)}>
+          <button
+            className="clear-btn"
+            onClick={() => setDevEmpList(Data.Resources.Empolyee_Details)}
+          >
             Clear
           </button>
         </div>

@@ -1,8 +1,14 @@
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+ 
+}
+.sidebar-projects-container {
+  display: flex;
+    min-height: 100vh;
+    width:100%;
+}
+

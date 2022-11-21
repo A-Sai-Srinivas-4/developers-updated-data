@@ -8,7 +8,7 @@ export const SidebarData = [
     cName: 'side-text'
   },
   {
-    title: 'IAVR',
+    title: 'IAVR Enterprise',
     path: '/project_details/IAVR Enterprise',
     icon: <GrProjects />,
     cName: 'side-text'

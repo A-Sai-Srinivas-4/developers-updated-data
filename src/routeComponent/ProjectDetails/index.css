@@ -1,8 +1,16 @@
-.project-details-card {
+.sidebar-project-details-container{
+    display: flex;
     min-height: 100vh;
+    width:100%;
+    
+}
+.project-details-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    width:100%;
+   
     
 }
 .project-details-back-container{
@@ -35,7 +43,7 @@
   }
 .heading-text{
     font-size: 30px;
-    color:rgb(166, 20, 20);
+    color:rgb(46, 187, 218);
 }
 
 .text{
